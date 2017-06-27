@@ -1,0 +1,190 @@
+/** ** Custom Style Sheet ** **/
+    /** Static CSS **/
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+    font-size: 16px;
+}
+body {
+    font-family: Roboto, sans-serif;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+/* ----- Text Formatting ----- */
+    /** Text Formatting - Default (MD) **/
+h1 {
+    font-size: 2.5em; /* 40px */
+    text-align: right;
+    font-weight: 100;
+}
+
+h2 {
+    font-size: 1.5em; /* 24px */
+    text-align: right;
+    font-weight: 300;
+}
+h3 {
+    font-size: 1.125em; /* 18px */
+    font-weight: 300;
+}
+p {
+    font-size: 1em; /* 16px */
+}
+li {
+    margin: 3px;
+    font-weight: 300;
+}
+
+/* ----- Navbar Styling ----- */
+    /** Navbar Styling Default (All) **/
+.li-article {
+    font-size: 1.125em;
+}
+.li-section {
+    font-size: 1em;
+    list-style:lower-alpha;
+}
+.li-sub-section {
+    font-size: 0.875em;
+    list-style:lower-roman;
+}
+
+/* ----- Responsive CSS ----- */
+    /** Large (SM) (Devices) **/
+
+    /** Large (XS) (Devices) **/
+@media only screen and (min-width: 1440px) and (max-width: 2560px) {
+    h1 {
+        font-size: 4em;
+    }
+    h2 {
+        font-size: 2.25em;
+    }
+}
+
+    /** Large (LG) (Devices) **/
+@media only screen and (min-width: 1440px) and (max-width: 2560px) {
+    h1 {
+        font-size: 4em;
+    }
+    h2 {
+        font-size: 2.25em;
+    }
+}
+    /** Extra Large (XL) (Devices) **/
+@media only screen and (min-width: 2560px) {
+    h1 {
+        font-size: 4.5em;
+    }
+    h2 {
+        font-size: 3em;
+    }
+}
+
+
+
+
+
+    /** Highlight Currently Selected Article in Navbar **/
+        /* Desktop Device Screen Sizes (MD, LG, XL) */
+#highlighted {
+        border-bottom: dashed 1px black;
+}
+        /* Mobile Device Screen Sizes (XS, SM) */
+@media only screen and (max-width: 1024) {   
+    #highlighted {
+        border: dashed 1px black;
+    }
+}
+        
+/* ----- Layout Styling ----- */
+
+/* Section Divs */
+.full-height {
+    position: absolute;
+    top: 0px;
+    height: 100%;
+}
+    /** Left Section Div **/
+#left-section {
+    left: 0px;
+    width: 300px;
+    border-right: solid 1px black;
+}
+#ls-top-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 15%;
+    width: 100%;
+    border-bottom: solid 1px;
+}
+#page-title {
+    font-size: 1.125em;
+}
+#ls-bottom-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 15%;
+    left: 0px;
+    height: 85%;
+    width: 100%;
+    margin: 8% 0%;
+}
+    /** Mid Section Div **/
+#mid-section {
+    left: 300px;
+}
+#ms-top-div {
+    display: flex;
+    justify-content: flex-end;
+    align-items:baseline;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 15%;
+    width: 90%;
+    border-bottom: solid 1px black;
+}
+#ms-bottom-div {
+    position: absolute;
+    top: 15%;
+    left: 0px;
+    height: 85%;
+    width: 90%;
+}
+    /** Right Section Div **/
+#right-section {
+    right: 0px;
+    border-left: dashed 1px black;
+}
+#rs-top-div {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 15%;
+    width: 100%;
+}
+#rs-bottom-div {
+    position: absolute;
+    top: 15%;
+    left: 0px;
+    height: 85%;
+    width: 100%;
+}
+
+/* ----- Imported Fonts ----- **/
+
+font-family: 'Roboto', sans-serif;
+
+
+
+
