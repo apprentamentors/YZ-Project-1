@@ -1,61 +1,76 @@
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width = device-width, initial-scale = 1">
-    
+
         <title>Technical Documentation</title>
+
         <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="/css/style.css">
-        
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+
     </head>
+
     <script src="js/main.js"></script>
-    <body onload="TD_Layout()">
-        
+
+    <body id="the-page" onload="TD_Layout()">
         <!-- Page Layout -->
         <span id="page-title"></span>
         <span id="article-heading"></span>
         <span id="section-heading"></span>
         <span id="nav-text"></span>
         <span id="article-text"></span>
-        
+        <span id="main-menu"></span>
+
         <!-- Navigation Icons -->
         <span id="nav-arrow-left"></span>
-        <span id="nav-arrow-up"></span>
         <span id="nav-arrow-right"></span>
-        <span id="nav-menu-open"></span>
-        <span id="nav-menu-close"></span>
-        
-        <!-- Custom Settings Icons -->
-        <span id="toggle-light-dark"></span>
-        
+        <span id="nav-arrow-up"></span>
+        <span id="nav-menu"></span>
+        <span id="light-dark-icon"></span>
+
+        <!-- SVG Nav Icons -->
+        <img id="nav-arrow-left-black" class="light" src="images/left-arrow-black.svg"/>
+        <img id="nav-arrow-left-grey" class="dark" src="images/left-arrow-grey.svg" />
+        <img id="nav-arrow-right-black" class="light" src="images/right-arrow-black.svg" />
+        <img id="nav-arrow-right-grey" class="dark" src="images/right-arrow-grey.svg" />
+        <img id="nav-arrow-up-black" class="light" src="images/up-arrow-black.svg" />
+        <img id="nav-arrow-up-grey" class="dark" src="images/up-arrow-grey.svg" />
+        <img id="nav-menu-open-black" class="light open-menu" src="images/menu-open-black.svg" />
+        <img id="nav-menu-close-black" class="light close-menu" src="images/menu-close-black.svg" />
+        <img id="nav-menu-open-grey" class="dark open-menu" src="images/menu-open-grey.svg" />
+        <img id="nav-menu-close-grey" class="dark close-menu" src="images/menu-close-grey.svg" />
+        <img id="toggle-light" class="light" src="images/sun-icon-black.svg" />
+        <img id="toggle-dark" class="dark" src="images/moon-icon-grey.svg" />
+
+
         <!-- Page Content -->
-        <h3 id="page-title-item">Technical Documentation v.1<!-- /toggle-light-dark/ --></h3>
+        <h3 id="page-title-item">Technical Documentation <!-- /light-dark-icon/ --> </h3>
         <h1 id="article-heading-item">HEADING 1: Article</h1>
         <h2 id="section-heading-item">HEADING 2: (Section Heading)</h2>
-        <h3 id="sub-section-heading-item" >HEADING 3: (Sub-section Heading)</h3>
-        <ol class="nav-text-item">
+        <ol id="nav-text-item">
             <li class="li-article">Long Article Name
-                <ol class="li-section">
+                <ol class="ol-list">
                     <li class="li-section">Very Long Section Name</li>
                     <li class="li-section">Section</li>
                     <li class="li-section">Section</li>
                 </ol>
             </li>
             <li class="li-article">Article
-                <ol>
+                <ol class="ol-list">
                     <li class="li-section">Section</li>
                     <li class="li-section">Section</li>
                     <li class="li-section">Section</li>
                 </ol>
             </li>
-            <li class="li-article"><span id="highlighted">Article (Highlighted)</span>
-                <ol>
+            <li class="li-article border"><span id="highlighted">Article (Highlighted)</span>
+                <ol class="ol-list">
                     <li class="li-section">Section</li>
                     <li class="li-section">Section</li>
                     <li class="li-section">Section
-                        <ol>
+                        <ol class="ol-list">
                             <li class="li-sub-section">Sub-section</li>
                             <li class="li-sub-section">Sub-section</li>
                             <li class="li-sub-section">Sub-section</li>
@@ -64,51 +79,82 @@
                 </ol>
             </li>
             <li class="li-article">Article
-                <ol>
+                <ol class="ol-list">
                     <li class="li-section">Section</li>
                     <li class="li-section">Section</li>
                     <li class="li-section">Section</li>
                 </ol>
             </li>
             <li class="li-article">Article
-                <ol>
+                <ol class="ol-list">
                     <li class="li-section">Section</li>
                     <li class="li-section">Section</li>
                     <li class="li-section">Section</li>
                 </ol>
             </li>
         </ol>
-        <span class="article-text-item">
-        <p>Lorem ipsum dolor sit amet, eos at mucius facilisi nominati, tritani detraxit eloquentiam pro ad, ea stet cibo comprehensam mei. In vix lorem nostrud inciderint. Sed eu veniam nullam ceteros, ea per vero tempor bonorum. Ei eum aliquam dissentias, id expetenda interesset sed. Noluisse oportere sea eu, ne sit affert persecuti adolescens.</p>
-        <h3>HEADING 3: (Sub-section Heading)</h3>
-        <p>Lorem ipsum dolor sit amet, eos at mucius facilisi nominati, tritani detraxit eloquentiam pro ad, ea stet cibo comprehensam mei. In vix lorem nostrud inciderint. Sed eu veniam nullam ceteros, ea per vero tempor bonorum. Ei eum aliquam dissentias, id expetenda interesset sed. Noluisse oportere sea eu, ne sit affert persecuti adolescens.</p>
-        <h3>HEADING 3: (Sub-section Heading)</h3>
-        <p>Lorem ipsum dolor sit amet, eos at mucius facilisi nominati, tritani detraxit eloquentiam pro ad, ea stet cibo comprehensam mei. In vix lorem nostrud inciderint. Sed eu veniam nullam ceteros, ea per vero tempor bonorum. Ei eum aliquam dissentias, id expetenda interesset sed. Noluisse oportere sea eu, ne sit affert persecuti adolescens.</p>
-        <h3>HEADING 3: (Sub-section Heading)</h3>
-        <p>Lorem ipsum dolor sit amet, eos at mucius facilisi nominati, tritani detraxit eloquentiam pro ad, ea stet cibo comprehensam mei. In vix lorem nostrud inciderint. Sed eu veniam nullam ceteros, ea per vero tempor bonorum. Ei eum aliquam dissentias, id expetenda interesset sed. Noluisse oportere sea eu, ne sit affert persecuti adolescens.</p>
-        </span>
-        
+        <span id="article-text-item">
+            <p>Lorem ipsum dolor sit amet, eos at mucius facilisi nominati, tritani detraxit eloquentiam pro ad, ea stet cibo comprehensam mei. In vix lorem nostrud inciderint. Sed eu veniam nullam ceteros, ea per vero tempor bonorum. Ei eum aliquam dissentias, id expetenda interesset sed. Noluisse oportere sea eu, ne sit affert persecuti adolescens.</p>
+            <h3>HEADING 3: (Sub-section Heading)</h3>
+            <p>Lorem ipsum dolor sit amet, eos at mucius facilisi nominati, tritani detraxit eloquentiam pro ad, ea stet cibo comprehensam mei. In vix lorem nostrud inciderint. Sed eu veniam nullam ceteros, ea per vero tempor bonorum. Ei eum aliquam dissentias, id expetenda interesset sed. Noluisse oportere sea eu, ne sit affert persecuti adolescens.</p>
+            <h3>HEADING 3: (Sub-section Heading)</h3>
+            <p>Lorem ipsum dolor sit amet, eos at mucius facilisi nominati, tritani detraxit eloquentiam pro ad, ea stet cibo comprehensam mei. In vix lorem nostrud inciderint. Sed eu veniam nullam ceteros, ea per vero tempor bonorum. Ei eum aliquam dissentias, id expetenda interesset sed. Noluisse oportere sea eu, ne sit affert persecuti adolescens.</p>
+            <h3>HEADING 3: (Sub-section Heading)</h3>
+            <p>Lorem ipsum dolor sit amet, eos at mucius facilisi nominati, tritani detraxit eloquentiam pro ad, ea stet cibo comprehensam mei. In vix lorem nostrud inciderint. Sed eu veniam nullam ceteros, ea per vero tempor bonorum. Ei eum aliquam dissentias, id expetenda interesset sed. Noluisse oportere sea eu, ne sit affert persecuti adolescens.</p></span>
+        <p id="main-menu-item">
+            <span id="main-menu-username">USER LOGIN</span><br />
+            <span id="main-menu-privilege">[Guest]</span>
+        </p>
+
         <!-- Default Layout (LG, MD & LG) @ min 1024px -->
-        <div class="full-height" id="left-section">
-            <div id="ls-top-div"><!-- /page-title-item/  --></div>
-            <div id="ls-bottom-div"><!-- /nav-text-item/ --></div>
-        </div>
-        <div class="full-height" id="mid-section">
-            <div id="ms-top-div"><!-- /article-heading-item/ --></div>
-            <div id="ms-bottom-div">
-                <!-- /section-heading-item/ -->
-                <!-- /sub-section-heading-item/ -->
-                <!-- /article-text-item/ -->
+        <div class="full-height border" id="left-section">
+            <div class="border" id="ls-top-div">
+                <!-- /page-title/ -->
+            </div>
+            <div id="ls-bottom-div">
+                <!-- /nav-text/ -->
             </div>
         </div>
-        <div class="full-height" id="right-section">
-            <div id="rs-top-div"></div>
+        <div class="full-height" id="mid-section">
+            <div class="border" id="ms-top-div">
+                <!-- /article-heading/ -->
+            </div>
+            <div id="ms-bottom-div">
+                <!-- /section-heading/ -->
+                <!-- /article-text/ -->
+            </div>
+        </div>
+        <div class="full-height border" id="right-section">
+            <div id="rs-top-div">
+                <!-- /main-menu/ -->
+            </div>
             <div id="rs-bottom-div">
                 <!-- /nav-arrow-left/ -->
                 <!-- /nav-arrow-right/ -->
                 <!-- /nav-arrow-up/ -->
-            
             </div>
         </div>
+        <!-- Default Layout (SM) @ min 1024px -->
+        <div id="top-section-sm">
+            <!-- MENU-OFF: -->
+               <!-- /page-title/ -->
+           <!-- MENU-ON: (style.display: "none") -->
+        </div>
+        <div id="left-section-sm">
+            <!-- MENU-OFF:  -->
+               <!-- /nav-arrow-left/ -->
+               <!-- /nav-menu-open/ -->
+               <!-- /nav-arrow-up/ -->
+           <!-- MENU-ON:  -->
+              <!-- /nav-menu-close/ -->
+              <!-- /page-title/ -->
+              <!-- /toggle-light-dark/ -->
+        </div>
+        <div id="right-section-sm">
+            <!-- MENU-OFF:  -->
+               <!-- /nav-text/ -->
+               <!-- /toggle-light-dark/ -->
+        </div>
+        <!-- Default Layout (XS) @ min 1024px -->
     </body>
-</html>    
+</html>

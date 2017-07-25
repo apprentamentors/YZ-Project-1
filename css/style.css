@@ -1,190 +1,237 @@
 /** ** Custom Style Sheet ** **/
-    /** Static CSS **/
+
+
+/* -----  Static CSS ----- */
 html, body {
+    display: flex;
     height: 100%;
     width: 100%;
-    margin: 0%;
-    padding: 0%;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
     font-size: 16px;
 }
-body {
-    font-family: Roboto, sans-serif;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-}
-/* ----- Text Formatting ----- */
-    /** Text Formatting - Default (MD) **/
-h1 {
-    font-size: 2.5em; /* 40px */
-    text-align: right;
-    font-weight: 100;
-}
 
+/* ----- Text Formatting (All Screen Sizes) ----- */
+h1, h2, h3, h4, h5, h6, p, li {
+    font-family: Roboto;
+    margin: 0;
+}
+h1 {
+  text-align: right;
+  font-weight: 100;
+}
 h2 {
-    font-size: 1.5em; /* 24px */
-    text-align: right;
-    font-weight: 300;
+  text-align: right;
+  font-weight: 300;
 }
 h3 {
-    font-size: 1.125em; /* 18px */
     font-weight: 300;
 }
 p {
     font-size: 1em; /* 16px */
 }
 li {
-    margin: 3px;
     font-weight: 300;
+    padding-bottom: 0.25em;
 }
 
 /* ----- Navbar Styling ----- */
-    /** Navbar Styling Default (All) **/
-.li-article {
-    font-size: 1.125em;
-}
-.li-section {
-    font-size: 1em;
-    list-style:lower-alpha;
-}
-.li-sub-section {
-    font-size: 0.875em;
-    list-style:lower-roman;
-}
-
-/* ----- Responsive CSS ----- */
-    /** Large (SM) (Devices) **/
-
-    /** Large (XS) (Devices) **/
-@media only screen and (min-width: 1440px) and (max-width: 2560px) {
-    h1 {
-        font-size: 4em;
+    /** Navbar Styling Default (All Screen Sizes) **/
+    .li-article {
+        font-size: 1.125em;
     }
-    h2 {
-        font-size: 2.25em;
+    .li-section {
+        font-size: 1em;
+        list-style:lower-alpha;
     }
-}
+    .li-sub-section {
+        font-size: 0.875em;
+        list-style:lower-roman;
+    }
 
+
+/* ----- Responsive Text ----- */
+    /** Extra Small (XS) (Devices) **/
+    @media only screen and (max-width: 600px) {
+        h1 {
+            font-size: 4em;
+        }
+        h2 {
+            font-size: 2.25em;
+        }
+    }
+    /** Small (SM) (Devices) **/
+    @media only screen and (min-width: 600px) and (max-width: 1024px) {
+        h1 {
+            font-size: 4em;
+        }
+        h2 {
+            font-size: 2.25em;
+        }
+    }
+    /** Medium (MD) (Devices) **/
+    @media only screen and (min-width: 1024px) and (max-width: 1440px) {
+        h1 {
+            font-size: 2.5em;
+        }
+        h2 {
+            font-size: 1.5em;
+        }
+    }
     /** Large (LG) (Devices) **/
-@media only screen and (min-width: 1440px) and (max-width: 2560px) {
-    h1 {
-        font-size: 4em;
+    @media only screen and (min-width: 1440px) and (max-width: 2560px) {
+        h1 {
+            font-size: 4em;
+        }
+        h2 {
+            font-size: 2.25em;
+        }
     }
-    h2 {
-        font-size: 2.25em;
-    }
-}
     /** Extra Large (XL) (Devices) **/
-@media only screen and (min-width: 2560px) {
-    h1 {
-        font-size: 4.5em;
+    @media only screen and (min-width: 2560px) {
+        h1 {
+            font-size: 4.5em;
+        }
+        h2 {
+            font-size: 3em;
+        }
     }
-    h2 {
-        font-size: 3em;
-    }
-}
-
-
-
-
-
     /** Highlight Currently Selected Article in Navbar **/
         /* Desktop Device Screen Sizes (MD, LG, XL) */
-#highlighted {
-        border-bottom: dashed 1px black;
-}
-        /* Mobile Device Screen Sizes (XS, SM) */
-@media only screen and (max-width: 1024) {   
     #highlighted {
-        border: dashed 1px black;
+            border-bottom: dashed 1px;
     }
-}
-        
+        /* Mobile Device Screen Sizes (XS, SM) */
+    @media only screen and (max-width: 1024px) {
+        #highlighted {
+            border: dashed 1px;
+        }
+    }
+
 /* ----- Layout Styling ----- */
 
-/* Section Divs */
-.full-height {
-    position: absolute;
-    top: 0px;
-    height: 100%;
-}
-    /** Left Section Div **/
-#left-section {
-    left: 0px;
-    width: 300px;
-    border-right: solid 1px black;
-}
-#ls-top-div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    height: 15%;
-    width: 100%;
-    border-bottom: solid 1px;
-}
-#page-title {
-    font-size: 1.125em;
-}
-#ls-bottom-div{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: 15%;
-    left: 0px;
-    height: 85%;
-    width: 100%;
-    margin: 8% 0%;
-}
-    /** Mid Section Div **/
-#mid-section {
-    left: 300px;
-}
-#ms-top-div {
-    display: flex;
-    justify-content: flex-end;
-    align-items:baseline;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    height: 15%;
-    width: 90%;
-    border-bottom: solid 1px black;
-}
-#ms-bottom-div {
-    position: absolute;
-    top: 15%;
-    left: 0px;
-    height: 85%;
-    width: 90%;
-}
-    /** Right Section Div **/
-#right-section {
-    right: 0px;
-    border-left: dashed 1px black;
-}
-#rs-top-div {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    height: 15%;
-    width: 100%;
-}
-#rs-bottom-div {
-    position: absolute;
-    top: 15%;
-    left: 0px;
-    height: 85%;
-    width: 100%;
-}
+    /* Section Divs */
+    .full-height {
+        position: absolute;
+        top: 0;
+        height: 100%;
+    }
+    /** ----- Default Layout (MD, LG, XL) ----- **/
+        /** Left Section Div **/
+    @media only screen and (min-width: 1024px) {
+        #left-section {
+            position: absolute;
+            left: 0px;
+            border-right: solid 1px;
+        }
 
-/* ----- Imported Fonts ----- **/
+            /** Left Section Top Div **/
+        #ls-top-div {
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            border-bottom: solid 1px;
+        }
+        #page-title-item {
+            padding: 0;
+            margin: 0;
+        }
+            /** Left Section Bottom Div **/
+        #ls-bottom-div {
+            display: flex;
+            justify-content: center;
+            position: absolute;
+            left: 0px;
+            width: 100%;
+        }
+        #nav-text-item {
+            margin: 0;
+            padding-top: 0;
+        }
+            /** Mid Section Div **/
+        #mid-section {
 
-font-family: 'Roboto', sans-serif;
+        }
+        #ms-top-div {
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-end;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 90%;
+            border-bottom: solid 1px;
+        }
+        #article-heading {
+            padding: 0;
+            margin: 0;
+        }
+        #ms-bottom-div {
+            position: absolute;
+            left: 0;
+            width: 90%;
+        }
+            /** Right Section Div **/
+        #right-section {
+            position: fixed;
+            right: 0;
+            width: 235px;
+            border-left: dashed 1px;
+        }
+        #rs-top-div {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+        }
+        #rs-bottom-div {
+            position: absolute;
+            left: 0;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+        }
+    }
 
-
-
-
+    /** ----- SM Screen Size ----- **/
+    @media only screen and (min-width: 600px) {
+        /** Top Section SM Div **/
+        #top-section-sm {
+            flex-direction: column;
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 80px;
+            width: 100%;
+            margin: 0;
+            background-color: green;
+        }
+        #left-section-sm {
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            position: absolute;
+            width: 134px;
+            top: 80px;
+            background-color: red;
+        }
+        #right-section-sm {
+            flex-direction: column;
+            position: absolute;
+            top: 80px;
+            left: 134px;
+            margin: 0;
+            background-color: orange;
+        }
+            /** Left Section SM Div **/
+            /** Right Section SM Div **/
+    }
