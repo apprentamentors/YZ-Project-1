@@ -1,0 +1,38 @@
+<svg width="47" height="36" viewBox="0 0 47 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="Canvas" transform="translate(-5041 4404)">
+<g id="Sun Icon">
+<g id="Ellipse">
+<mask id="mask0_outline_ins">
+<use xlink:href="#path0_fill" fill="white" transform="translate(5050 -4402)"/>
+</mask>
+<g mask="url(#mask0_outline_ins)">
+<use xlink:href="#path1_stroke_2x" transform="translate(5050 -4402)"/>
+</g>
+</g>
+<g id="Line 8">
+<use xlink:href="#path2_stroke" transform="matrix(1 -2.44929e-16 2.44929e-16 1 5041 -4387)"/>
+</g>
+<g id="Line 8">
+<use xlink:href="#path2_stroke" transform="matrix(1 -2.44929e-16 2.44929e-16 1 5080 -4387)"/>
+</g>
+<g id="Line 8">
+<use xlink:href="#path3_stroke" transform="matrix(-0.707107 -0.707107 0.707107 -0.707107 5082 -4369)"/>
+</g>
+<g id="Line 8">
+<use xlink:href="#path3_stroke" transform="matrix(0.707107 -0.707107 -0.707107 -0.707107 5046 -4369)"/>
+</g>
+<g id="Line 8">
+<use xlink:href="#path3_stroke" transform="matrix(0.707107 0.707107 -0.707107 0.707107 5046 -4402)"/>
+</g>
+<g id="Line 8">
+<use xlink:href="#path3_stroke" transform="matrix(-0.707107 0.707107 0.707107 0.707107 5081 -4403)"/>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 28 15.5C 28 24.0604 21.732 31 14 31C 6.26801 31 0 24.0604 0 15.5C 0 6.93959 6.26801 0 14 0C 21.732 0 28 6.93959 28 15.5Z"/>
+<path id="path1_stroke_2x" d="M 26.75 15.5C 26.75 23.4928 20.925 29.75 14 29.75L 14 32.25C 22.539 32.25 29.25 24.628 29.25 15.5L 26.75 15.5ZM 14 29.75C 7.07502 29.75 1.25 23.4928 1.25 15.5L -1.25 15.5C -1.25 24.628 5.461 32.25 14 32.25L 14 29.75ZM 1.25 15.5C 1.25 7.50721 7.07502 1.25 14 1.25L 14 -1.25C 5.461 -1.25 -1.25 6.37197 -1.25 15.5L 1.25 15.5ZM 14 1.25C 20.925 1.25 26.75 7.50721 26.75 15.5L 29.25 15.5C 29.25 6.37197 22.539 -1.25 14 -1.25L 14 1.25Z"/>
+<path id="path2_stroke" d="M 0 0L 7.07 0L 7.07 -1.25L 0 -1.25L 0 0Z"/>
+<path id="path3_stroke" d="M 0 0L 7.07107 0L 7.07107 -1.25L 0 -1.25L 0 0Z"/>
+</defs>
+</svg>

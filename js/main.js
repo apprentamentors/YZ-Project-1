@@ -76,6 +76,7 @@ function TD_Layout() {
     var topSectionSM = document.getElementById("top-section-sm");
     var leftSectionSM = document.getElementById("left-section-sm");
     var rightSectionSM = document.getElementById("right-section-sm");
+	var bottomSectionSM = document.getElementById("bottom-section-sm");
         // TODO (XS)
 
 
@@ -292,12 +293,17 @@ function TD_Layout() {
             leftSectionSM.appendChild(navMenu);
 
             leftSectionSM.style.height = (window.innerHeight - 80) + "px";
-            // navMenu.style.display = "initial";
+            // navMenu.style.display = "initial"; -- Also check if certain items are being displayed in the background
             leftSectionSM.appendChild(navArrowRight);
             rightSectionSM.appendChild(sectionHeading);
             rightSectionSM.appendChild(articleText);
             rightSectionSM.style.width = (window.innerWidth - 136) + "px";
             rightSectionSM.style.height = (window.innerHeight - 80) + "px";
+			bottomSectionSM.appendChild(mainMenu);
+			bottomSectionSM.appendChild(pageTitle);
+			bottomSectionSM.appendChild(darkLightToggle);
+			bottomSectionSM.style.width = (window.innerWidth - 136) + "px";
+			bottomSectionSM.style.height = (window.innerHeight - 80) + "px";
 
         }
             // (XS Screens)
